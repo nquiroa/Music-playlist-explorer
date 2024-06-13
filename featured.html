@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="data/data.js" defer></script>
+    <script src="featured.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Featured Playlist</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="featured-main">
+        <section class="playlist-info">
+            <img id="featured-image" src="" alt="Playlist Image">
+            <div id="info-details">
+                <h2 id="featured-name"></h2>
+                <p id="featured-creator"></p>
+                <div id="creator-like">
+                    <p id="featured-likes"></p>
+                    <p>&nbsp;▫&nbsp;</p>
+                    <p id="featured-song-count"></p>
+                </div>
+            </div>
+        </section>
+        <section class="song-list">
+            <h3>Songs</h3>
+            <ul id="featured-songs"></ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 Nathan Media, LLC, All Rights Reserved. Nathan's project is a registered trademark of Y.A.S Media, LLC.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist Explorer</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Music Playlist Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="featured.html">Featured Playlist</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><button id="add-playlist-button">Add Playlist</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <input type="text" id="search-bar" placeholder="Search playlists by name or creator..." />
+
+        <div id="playlist-cards"></div>
+
+        <div id="modal-overlay">
+            <div id="modal-content">
+                <span class="close">&times;</span>
+                <div id="playlist-details"></div>
+                <button id="add-to-playlist" class="add-to-playlist">Add song</button>
+            </div>
+        </div>
+
+        <div id="modal-add-playlist" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add New Playlist</h2>
+                <form id="add-playlist-form">
+                    <label for="playlist-name">Playlist Name:</label>
+                    <input type="text" id="playlist-name" name="playlist-name" required>
+                    <label for="playlist-creator">Creator:</label>
+                    <input type="text" id="playlist-creator" name="playlist-creator" required>
+                    <label for="playlist-art">Playlist Art URL:</label>
+                    <input type="text" id="playlist-art" name="playlist-art" required>
+                    <button type="submit">Add Playlist</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="modal-add-song" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add New Song</h2>
+                <form id="add-song-form">
+                    <label for="song-title">Song Title:</label>
+                    <input type="text" id="song-title" name="song-title" required>
+                    <label for="song-artist">Artist:</label>
+                    <input type="text" id="song-artist" name="song-artist" required>
+                    <label for="song-album">Album:</label>
+                    <input type="text" id="song-album" name="song-album" required>
+                    <label for="song-cover">Cover Art URL:</label>
+                    <input type="text" id="song-cover" name="song-cover" required>
+                    <label for="song-duration">Duration:</label>
+                    <input type="text" id="song-duration" name="song-duration" required>
+                    <button type="submit">Add Song</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_contents">
+            <p>© 2024 Nathan Media, LLC, All Rights Reserved. Nathan's project is a registered trademark of Y.A.S Media, LLC.</p>
+        </div>
+    </footer>
+
+    <script src="data/data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
